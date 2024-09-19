@@ -10,7 +10,7 @@ body {
   header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
             header .leftLogo{width:100px;height:78px;}
             header .leftLogo img{width:100%;height:100%;}
-            header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+            header nav ul li, header nav ul li a{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
             header nav ul li:last-child{margin-right:0;}
             header nav ul li:hover{color:#FF4362;}
   
@@ -287,9 +287,9 @@ header{display: flex;display: -webkit-flex;justify-content: space-between;backgr
             .leadPopupox .formBox{display: flex;flex-direction: column;margin-bottom:10px;}
             .leadPopupox .formBox label{font-size:14px;color:#666;margin-bottom:10px;}
             .leadPopupox .formBox input{border:1px solid #efefef;height:42px;}
-            .leadPopupox .btn.btn-primary.getCallack{font-size:18px;color:#fff;background: #FF4362;border:none;padding:10px  30px;width:100%;border-radius:6px;}
+            .leadPopupox .btn.btn-primary.getCallack{font-size:18px;color:#fff;background: #FF4362;border:none;padding:10px  30px;width:100%;border-radius:6px;cursor:pointer;}
             .leadPopupox figure{width:16px;height:16px;position: absolute;right:15px;top:15px;cursor:poiter;}
-            .leadPopupox figure img{width:100%;height:100%;}
+            .leadPopupox figure img{width:100%;height:100%;cursor:pointer;}
 
             .galleryMainBanner{position: relative;height:600px;margin-bottom:100px;}
             .galleryMainBanner .galleryMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
