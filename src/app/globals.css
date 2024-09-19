@@ -1,42 +1,292 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{background: #fff;overflow:hidden;overflow-y:auto;margin:0px;padding:0px;}.errorMsg{border:1px solid #f10000 !important;}body.active{overflow:hidden}body,ul,ol,li,h1,h2,h3,h4,h5,h6,figure,p{padding:0;margin:0;list-style:none}body,p{font-size:14px;line-height:22px;color:#333}a,.btn,button{text-decoration:none;outline:0}small{font-size:100%}.container{padding:0 15px;margin:0 auto;width:1170px}.container-fluid{padding:0 15px;max-width:1366px;margin:auto}.container-listing{padding:0 15px;max-width:100%;margin:auto}.container-full{padding:0 15px;max-width:100%;width:1170px;margin:auto}.img-responsive{max-width:100%;height:auto;max-height:100%}body{margin:0;padding:0;}
+.btn.btn-primary.knowmore{border:1px solid #331A42;background:#fff;padding:15px 30px;font-size: 18px;border-radius:6px;color:#331A42;margin-top:30px;cursor:pointer;}
+.btn.btn-primary.knowmore:hover{background: #331A42;color:#fff;}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
   }
-}
+  header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
+            header .leftLogo{width:100px;height:78px;}
+            header .leftLogo img{width:100%;height:100%;}
+            header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+            header nav ul li:last-child{margin-right:0;}
+            header nav ul li:hover{color:#FF4362;}
+  
+
+ /*From here lead form css starts */
+
+
+ .leadFormMainBox{background: #E6E6E6;margin:100px 0px 0px;padding:100px 0px;}
+ .leadFormMainBox .leadfromInnerBox{background: #fff;border-radius:8px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);display: flex;display: -webkit-flex;align-items: center;}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox{background: #FF4362;width:50%;padding:150px 20px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox h2{font-size: 22px;color:#fff;font-weight:bold;margin:30px 0px}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox p{font-size: 14px;color:#fff;line-height: 19px;text-align: center;margin:0 auto;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox{width:50%;padding:20px;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox{display: flex;display: -webkit-flex;gap:10px;margin-bottom:15px;flex-direction: column;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox:last-child{margin-bottom:0;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox h2{font-size: 28px;color:#000;margin-bottom:30px;text-align: center;margin: 0 auto;padding-bottom:30px;}
+.formBox label{font-size:14px;color:#666;}
+input{border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px;padding:20px;}
+input:focus{outline: none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);}
+.leadmobileNumber{display: flex;display: -webkit-flex;width:100%;}
+.leadmobileNumber select{width:25%;border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px 0px 0px  6px;padding:10px;}
+.leadmobileNumber select:focus{outline:none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);}
+.leadmobileNumber input{width:75%;border-radius:0px 6px 6px 0px}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack{width:100%;background: none;border:1px solid #FF4362;color:#FF4362;padding:15px 30px;font-size: 18px;cursor:pointer;border-radius:6px;width:100%;margin-top:20px;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack:hover{background: #FF4362;color:#fff;border:none;}
+footer{background: #252D41;padding:80px 0px;}
+footer .footerContentBox{display: flex;display: -webkit-flex;justify-content: space-between;}
+footer .footerContentBox p{font-size: 18px;font-weight: 500;color:#fff;}
+
+ /*From here lead form css Ends */
+
+ *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{background: #fff;overflow:hidden;overflow-y:auto;margin:0px;padding:0px;}.errorMsg{border:1px solid #f10000 !important;}body.active{overflow:hidden}body,ul,ol,li,h1,h2,h3,h4,h5,h6,figure,p{padding:0;margin:0;list-style:none}body,p{font-size:14px;line-height:22px;color:#333}a,.btn,button{text-decoration:none;outline:0}small{font-size:100%}.container{padding:0 15px;margin:0 auto;width:1170px}.container-fluid{padding:0 15px;max-width:1366px;margin:auto}.container-listing{padding:0 15px;max-width:100%;margin:auto}.container-full{padding:0 15px;max-width:100%;width:1170px;margin:auto}.img-responsive{max-width:100%;height:auto;max-height:100%}body{margin:0;padding:0;}
+.btn.btn-primary.knowmore{border:1px solid #331A42;background:#fff;padding:15px 30px;font-size: 18px;border-radius:6px;color:#331A42;margin-top:30px;cursor:pointer;}
+.btn.btn-primary.knowmore:hover{background: #331A42;color:#fff;}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
+            header .leftLogo{width:100px;height:78px;}
+            header .leftLogo img{width:100%;height:100%;}
+            header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+            header nav ul li:last-child{margin-right:0;}
+            header nav ul li:hover{color:#FF4362;}
+  
+
+ /*From here lead form css starts */
+
+
+ .leadFormMainBox{background: #E6E6E6;margin:100px 0px 0px;padding:100px 0px;}
+ .leadFormMainBox .leadfromInnerBox{background: #fff;border-radius:8px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);display: flex;display: -webkit-flex;align-items: center;}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox{background: #FF4362;width:50%;padding:150px 20px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox h2{font-size: 22px;color:#fff;font-weight:bold;margin:30px 0px}
+ .leadFormMainBox .leadfromInnerBox .leadFormLeftBox p{font-size: 14px;color:#fff;line-height: 19px;text-align: center;margin:0 auto;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox{width:50%;padding:20px;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox{display: flex;display: -webkit-flex;gap:10px;margin-bottom:15px;flex-direction: column;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox:last-child{margin-bottom:0;}
+ .leadFormMainBox .leadfromInnerBox .leadFormRightBox h2{font-size: 28px;color:#000;margin-bottom:30px;text-align: center;margin: 0 auto;padding-bottom:30px;}
+.formBox label{font-size:14px;color:#666;}
+input{border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px;padding:20px;}
+input:focus{outline: none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);}
+.leadmobileNumber{display: flex;display: -webkit-flex;width:100%;}
+.leadmobileNumber select{width:25%;border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px 0px 0px  6px;padding:10px;}
+.leadmobileNumber select:focus{outline:none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);}
+.leadmobileNumber input{width:75%;border-radius:0px 6px 6px 0px}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack{width:100%;background: none;border:1px solid #FF4362;color:#FF4362;padding:15px 30px;font-size: 18px;cursor:pointer;border-radius:6px;width:100%;margin-top:20px;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack:hover{background: #FF4362;color:#fff;border:none;}
+footer{background: #252D41;padding:80px 0px;}
+footer .footerContentBox{display: flex;display: -webkit-flex;justify-content: space-between;}
+footer .footerContentBox p{font-size: 18px;font-weight: 500;color:#fff;}
+header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
+header .leftLogo{width:100px;height:78px;}
+header .leftLogo img{width:100%;height:100%;}
+header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+header nav ul li:last-child{margin-right:0;}
+.homeMainBanner{position: relative;background-attachment: fixed;height:776px;}
+.homeServicesBanner{position: relative;background-attachment: fixed;height:576px;margin:100px 0px;padding:80px 0 0px}
+.homeMainBanner .homeMainBg, .homeservicesBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+.homeMainBanner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+.homeServicesBanner .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+.homeMainBanner .bannerContent h5, .homeServicesBanner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+.homeMainBanner .bannerContent h1, .homeServicesBanner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+.homeMainBanner .bannerContent h3, .homeServicesBanner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+.homeServicesBanner .btn.btn-primary.getCallack{border:1px solid #fff;color:#fff;padding:15px 30px;font-size: 18px;font-weight:bold;background: none;border-radius:6px;}
+.bannerContent figure{width:237px;height:106px;}
+.bannerContent figure img{width:100%;height:100%;}
+.exclusiveWeddingPlanner{margin:100px 0px;display: flex;display: -webkit-flex;gap:30px;align-items: center;}
+.exclusiveWeddingPlanner .leftBox, .exclusiveWeddingPlanner .rightBox{width:50%;}
+.exclusiveWeddingPlanner .leftBox figure{width:100%;height:556px;}
+.exclusiveWeddingPlanner .leftBox figure img{width:100%;height:100%;}
+.exclusiveWeddingPlanner .rightBox h2, .selectOurWeedingDestination h2{font-size: 32px;color: #331A42;line-height:38px;margin-bottom:20px;}
+.exclusiveWeddingPlanner .rightBox h2 small, .selectOurWeedingDestination h2 small{font-size: 16px;font-weight:600;color:#331A42;display: block;}
+.exclusiveWeddingPlanner .rightBox p, .selectOurWeedingDestination p{font-size:18px;color:#331A42;line-height:28px;}
+.granndWeedinngPlanner{position: relative;width:100%;height:616px;margin:100px 0px;}
+.granndWeedinngPlanner .grandPlannerBg{position: absolute;top:0;left:0;bottom:0;right:0;width:100%;height:100%;}
+.granndWeedinngPlanner .grandPlannerContent{position: relative;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.granndWeedinngPlanner .grandPlannerContent{text-align: center;margin: 0 auto;padding-top:220px;}
+.granndWeedinngPlanner .grandPlannerContent h3{font-size:56px;color:#fff;font-weight: bold;line-height: 62px;margin-bottom:20px;}
+.granndWeedinngPlanner .grandPlannerContent p{font-size: 20px;color:#fff;font-weight:normal;margin-bottom:30px;line-height: 26px;}
+.granndWeedinngPlanner .grandPlannerContent .btn.btn-primary.getCallack{background: none;border:1px solid #fff;color:#fff;padding:15px 30px;font-size: 18px;cursor:pointer;border-radius:6px;}
+.selectOurWeedingDestination{display: flex;display: -webkit-flex;gap:30px;align-items: center;}
+.selectOurWeedingDestination .leftImgWeedingDestination, .selectOurWeedingDestination .rightWeedingDestination {width:50%;}
+.btn.btn-primary.knowmore{border:1px solid #331A42;background:#fff;padding:15px 30px;font-size: 18px;border-radius:6px;color:#331A42;margin-top:30px;cursor:pointer;}
+.gallerySection{margin:100px 0px;}
+.gallerySection h2{font-size:36px;color:#000;font-weight:bold;margin-bottom:30px;}
+
+/*From here lead form css starts */
+.leadFormMainBox{background: #E6E6E6;margin:100px 0px 0px;padding:100px 0px;}
+.leadFormMainBox .leadfromInnerBox{background: #fff;border-radius:8px;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);display: flex;display: -webkit-flex;align-items: center;}
+.leadFormMainBox .leadfromInnerBox .leadFormLeftBox{background: #FF4362;width:50%;padding:150px 20px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;}
+.leadFormMainBox .leadfromInnerBox .leadFormLeftBox h2{font-size: 22px;color:#fff;font-weight:bold;margin:30px 0px}
+.leadFormMainBox .leadfromInnerBox .leadFormLeftBox p{font-size: 14px;color:#fff;line-height: 19px;text-align: center;margin:0 auto;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox{width:50%;padding:20px;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox{display: flex;display: -webkit-flex;gap:10px;margin-bottom:15px;flex-direction: column;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .formBox:last-child{margin-bottom:0;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox h2{font-size: 28px;color:#000;margin-bottom:30px;text-align: center;margin: 0 auto;padding-bottom:30px;}
+.formBox label{font-size:14px;color:#666;}
+input{border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px;padding:20px;}
+input:focus{outline: none;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);}
+.leadmobileNumber{display: flex;display: -webkit-flex;width:100%;}
+.leadmobileNumber select{width:25%;border:1px solid #efefef;background: #ffff;height:42px;border-radius:6px 0px 0px  6px;padding:10px;}
+.leadmobileNumber input{width:75%;border-radius:0px 6px 6px 0px}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack{width:100%;background: none;border:1px solid #FF4362;color:#FF4362;padding:15px 30px;font-size: 18px;cursor:pointer;border-radius:6px;width:100%;margin-top:20px;}
+.leadFormMainBox .leadfromInnerBox .leadFormRightBox .btn.btn-primary.getCallack:hover{background: #FF4362;color:#fff;border:none;}
+footer{background: #252D41;padding:80px 0px;}
+footer .footerContentBox{display: flex;display: -webkit-flex;justify-content: space-between;}
+footer .footerContentBox p{font-size: 18px;font-weight: 500;color:#fff;}
+
+
+
+/* About */
+header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
+            header .leftLogo{width:100px;height:78px;}
+            header .leftLogo img{width:100%;height:100%;}
+            header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+            header nav ul li:last-child{margin-right:0;}
+
+            .aboutMainBanner{position: relative;height:700px;}
+            .aboutMainBanner .homeMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .aboutMainBanner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .homeServicesBanner .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .aboutMainBanner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+            .aboutMainBanner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+            .aboutMainBanner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+            .lookingForPerfection{margin:100px 0px}
+            .lookingForPerfection h4{font-size: 22px;color:#666;line-height: 28px;margin-bottom: 15px;}
+            .lookingForPerfection h1{font-size:48px;line-height:56px;margin-bottom: 15px;color:#000;}
+            .lookingForPerfection p{font-size: 18px;color:#666;line-height: 24px;color:#666;margin-bottom:30px;}
+            .lookingForPerfection .btn.btn-primary.getCallBack{color:#FFF;font-size:18px;font-weight: bold;background: #FF4362;padding:15px 30px;border:none;cursor: pointer;}
+            .lookingForPerfection  .lookigForPerfectionContentBox{text-align: center;margin:0 auto;}
+
+            .eventsNailedBox{background:#000;padding:150px 0px;}
+            .eventailedContentMainBox{display: flex;display: -webkit-flex;align-items: center;gap:30px;}
+            .eventailedContentMainBox .leftBox, .eventailedContentMainBox .rightbox{width:50%;}
+            .eventailedContentMainBox .leftBox figure, .eventailedContentMainBox .rightBox figure{width:450px;height:480px;}
+            .eventailedContentMainBox .leftBox figure img, .eventailedContentMainBox .rightBox figure img{width:100%;height:100%;}
+            .eventailedContentMainBox .rightBox .eventNailedContentBox{display: flex;display: -webkit-flex;justify-content: space-between;margin-bottom: 30px;}
+            .eventailedContentMainBox .rightBox .eventNailedContentBox .noOfEventNailedox, .eventailedContentMainBox .rightBox .weedingDestination{display: flex;display: -webkit-flex;flex-direction: column;}
+            .eventailedContentMainBox .rightBox .eventNailedContentBox strong{font-size:56px;font-weight:bold;color:#fff;margin-bottom:20px;text-align: center;}
+            .eventailedContentMainBox .rightBox .eventNailedContentBox .n0OfeventNailed, .eventailedContentMainBox .rightBox .eventNailedContentBox{font-size:18px;color:#FF4362;}
+
+
+            /* Contact us */
+            .contactUsMainBannner{position: relative;height:700px;}
+            .contactUsMainBannner .contactUsMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .contactUsMainBannner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .contactUsMainBannner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+            .contactUsMainBannner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+            .contactUsMainBannner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+            .leadFormMainBox{margin:0 !important;}
+            .leadFormMainBox .leadfromInnerBox .leadFormLeftBox{padding:230px 50px;}
+            .adressCardBox{display: flex;display: -webkit-flex;gap:15px;align-items: center;justify-content: center;margin:100px 0px;}
+            .adressCardBox .adressCard{background:#fff;border:1px solid #efefef;box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);position: relative;padding:30px;display: flex;display: -webkit-flex;flex-direction: column;border-radius:8px;width:33%;min-height: 202px;}
+            .adressCardBox .adressCard figure{width:32px;height:32px;display: flex;display: -webkit-flex;align-items:center;margin-bottom:30px;}
+            .adressCardBox .adressCard figure img{width:100%;height:100%;}
+            .adressCardBox .adressCard h3{font-size: 36px;color:#333;font-weight:bold;margin-bottom: 15px;}
+            .adressCardBox .adressCard h3 p{font-size:18px;font-weight:normal;}
+            .adressCardBox .adressCard::after{content:'';position: absolute;border-bottom:3px solid #FF4362;bottom:0px;width:100%;left:0;}
+            .mapox{margin:100px 0px;width:100%;height:716px;}
+
+            /* Gallery */
+            .galleryMainBanner{position: relative;height:700px;}
+            .galleryMainBanner .galleryMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .galleryMainBanner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .galleryMainBanner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+            .galleryMainBanner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+            .galleryMainBanner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+
+            /* Services */
+            header{display: flex;display: -webkit-flex;justify-content: space-between;background:#fff;order-bottom:1px solid #efefef;padding:10px 60px;align-items: center;height:58px;}
+            header .leftLogo{width:100px;height:78px;}
+            header .leftLogo img{width:100%;height:100%;}
+            header nav ul li{display: inline-flex;font-size: 14px;color:#331A42;font-weight: normal;margin-right:20px;cursor:pointer;}
+            header nav ul li:last-child{margin-right:0;}
+
+            .servicesMainBanner{position: relative;height:700px;}
+            .servicesMainBanner .servicesMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .servicesMainBanner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .servicesMainBanner .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .servicesMainBanner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+            .servicesMainBanner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+            .servicesMainBanner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+            .servingBest{margin:100px 0px;}
+            .servingBestBox{display: flex;display: -webkit-flex;gap:30px;align-items: center;}
+            .servingBestBox .leftBox, .servingBestBox .rightBox{width:50%;}
+            .servingBestBox .rightBox h1{font-size:36px;font-weight:bold;margin-bottom:20px;}
+            .servingBestBox .rightBox p{font-size:18px;color:#666;margin-bottom:30px;}
+            .servingBestBox .rightBox .btn.btn-primary.getCallBack{color:#FFF;font-size:18px;font-weight: bold;background: #FF4362;padding:15px 30px;border:none;cursor: pointer;border-radius:6px;}
+            .ourServices{margin: 100px 0px;}
+            .ourServicesCardox{display: flex;display: -webkit-flex;gap:15px;align-items: center;justify-content: center;}
+            .ourServicesCardox .servicesCard{width:33%;background: #fff;border:1px solid #efefef;box-shadow:0 1px 4px 0 rgba(0, 0, 0, 0.16);border-radius:8px 8px 0px 0px;position: relative;padding:20px;min-height: 364px;margin-bottom:50px;}
+            .ourServicesCardox .servicesCard::before{content:'';position:absolute;bottom:0px;left:0px;border:2px solid  #FF4362;width:100%;}
+            .ourServicesCardox .servicesCard figure{width:52px;height:52px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;margin-bottom: 20px;}
+            .ourServicesCardox .servicesCard figure img{width:100%;height:100%;}
+            .ourServicesCardox .servicesCard h2{font-size: 26px;color:#000;font-weight: bold;margin-bottom:20px;}
+            .ourServicesCardox .servicesCard p{font-size: 18px;color:#666;font-weight: normal;line-height: 26px;}
+            .ourServices .btn.btn-primary.knowMore{color:#FFF;font-size:18px;font-weight: bold;background: #FF4362;padding:15px 30px;border:none;cursor: pointer;display: flex;text-align: center;margin:0 auto;}
+            .homeServicesBanner{position: relative;height:700px;}
+            .homeServicesBanner .homeservicesBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .homeServicesBanner .bannerContent{position: relative;padding-top:180px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .homeServicesBanner .bannerContent h1{font-size:36px;color:#fff;line-height:110px;}
+            .homeServicesBanner .bannerContent p{font-size:18px;color:#fff;line-height:24px;margin-bottom:30px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+            .bannerContent .btn.btn-primary.getCallack{border:1px solid #fff;border-radius:6px;color:#fff;font-size: 18px;font-weight:bold;padding:15px 30px;background: none;}
+          /* Poup */
+          .overlay {
+            display: none;
+            position: fixed;
+            top: -48px;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            background-color: #000000ca;
+            transition: .3s;
+            z-index: 9;
+        }
+        
+        .overlay.active {
+            display: block;
+        }
+        
+                   .leadPopupox{    width: 100%;
+            max-width: 360px;
+            border-radius: 8px;
+            background: #fff;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            box-shadow: 0 3px 85px 0 #00000026;
+            transform: translate(-50%, -50%);
+            z-index:99;
+            transition: .3s;
+            padding: 15px;
+            display: none;
+        }
+        .leadPopupox.active{    display: block;
+            z-index: 10;}
+        
+            .leadPopupox h2{font-size:22px;margin-bottom:30px;}
+            .leadPopupox .formBox{display: flex;flex-direction: column;margin-bottom:10px;}
+            .leadPopupox .formBox label{font-size:14px;color:#666;margin-bottom:10px;}
+            .leadPopupox .formBox input{border:1px solid #efefef;height:42px;}
+            .leadPopupox .btn.btn-primary.getCallack{font-size:18px;color:#fff;background: #FF4362;border:none;padding:10px  30px;width:100%;border-radius:6px;}
+            .leadPopupox figure{width:16px;height:16px;position: absolute;right:15px;top:15px;cursor:poiter;}
+            .leadPopupox figure img{width:100%;height:100%;}

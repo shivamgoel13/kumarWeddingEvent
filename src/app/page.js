@@ -1,95 +1,49 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+'use client'
+import Banner from "@/components/Banner";
+import Planner from "@/components/Planner";
+import Services from "@/components/Services";
+import Gallery from "@/components/Gallery";
+import Popup from "@/components/Popup";
+import { useState } from "react";
 export default function Home() {
+    const [showPopup, setShowPopup] = useState(false)
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+    {showPopup && <Popup setShowPopup={setShowPopup}/>}
+    <div className="homeBody">
+        <Banner/>
+        <div className="container">
+            <div className="exclusiveWeddingPlanner">
+                <div className="leftBox">
+                    <figure>
+                        <img  src="images/exclusivePlannerLeftImg.png"/>
+                    </figure>
+                </div>
+                <div className="rightBox">
+                    <h2><small>Your  Exclusive</small><strong>Weeding Planners</strong></h2>
+                    <p>
+                        Let our exclusive wedding planners bring your dream day to life with personalized, flawless execution. From elegant decor to seamless coordination, we handle every detail, so you can focus on making memories. Trust us to craft a celebration that reflects your unique love story.</p>
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <Planner setShowPopup={setShowPopup}/>
+        <div className="container">
+            <div className="selectOurWeedingDestination">
+                <div className="leftImgWeedingDestination">
+                    <figure>
+                        <img src="images/weedigDestination.png" className="img-responsive"/>
+                    </figure>
+                </div>
+                <div className="rightWeedingDestination">
+                    <h2><small>Your  Exclusive</small><strong>Weeding Planners</strong></h2>
+                    <p>Discover the perfect wedding destination tailored to your dreams! From breathtaking beaches to enchanting venues, create unforgettable memories in a stunning location. Start planning the celebration of a lifetime today!</p>
+                    <button className="btn btn-primary knowmore" onClick={()=>setShowPopup((state)=>!state)}>Know More</button>
+                </div>
+            </div>
+        </div>
+        <Services setShowPopup={setShowPopup}/>
+        <Gallery/>
     </div>
-  );
+    </>
+  )
 }
