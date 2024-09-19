@@ -290,3 +290,21 @@ header{display: flex;display: -webkit-flex;justify-content: space-between;backgr
             .leadPopupox .btn.btn-primary.getCallack{font-size:18px;color:#fff;background: #FF4362;border:none;padding:10px  30px;width:100%;border-radius:6px;}
             .leadPopupox figure{width:16px;height:16px;position: absolute;right:15px;top:15px;cursor:poiter;}
             .leadPopupox figure img{width:100%;height:100%;}
+
+            .galleryMainBanner{position: relative;height:600px;margin-bottom:100px;}
+            .galleryMainBanner .galleryMainBg{position: absolute;top:0;left:0;width:100%;height:100%;}
+            .galleryMainBanner .bannerContent{position: relative;padding-top:150px;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .bannerContent{position: relative;display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;gap:20px;}
+            .galleryMainBanner .bannerContent h5{font-size:26px;color:#fff;line-height: 24px;}
+            .galleryMainBanner .bannerContent h1{font-size: 105px;color:#fff;line-height:110px;}
+            .galleryMainBanner .bannerContent h3{font-size:24px;color:#fff;line-height:31px;}
+            .bannerContent figure{width:237px;height:106px;}
+            .bannerContent figure img{width:100%;height:100%;}
+            .imageGalleryBox{display: flex;display: -webkit-flex;align-items: center;gap:15px;flex-wrap: wrap;}
+            .imageGalleryBox .galleryCard{width:32%;}
+            .imageGalleryBox .galleryCard figure, .imageGalleryBox .galleryCard figure img{width:100%;height:100%;}
+            .galleryVideoSection{display: flex;display: -webkit-flex;align-items: center;gap:30px}
+            .galleryVideoSection .leftVideoSection, .galleryVideoSection .rightVideoSection{width:50%;}
+            .galleryVideoSection .rightVideoSection h2{font-size:32px;color:#000;line-height:46px;margin-bottom:30px;}
+            .galleryVideoSection .rightVideoSection h2 strong{font-size:54px;display:block;}
+            .galleryVideoSection .rightVideoSection p{font-size:18px;color:#666;}
