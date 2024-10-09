@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <>
     {showPopup && <Popup setShowPopup={setShowPopup}/>}
-    <div className="homeBody">
         <Banner/>
         <div className="container">
             <div className="exclusiveWeddingPlanner">
@@ -43,7 +42,6 @@ export default function Home() {
         </div>
         <Services setShowPopup={setShowPopup}/>
         <Gallery/>
-    </div>
     </>
   )
 }

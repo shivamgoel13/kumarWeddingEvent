@@ -14,9 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="overlay"></div>
+        <div className="homeBody">
         <Header/>
         {children}
         <LeadForm/>
+        </div>
         <Footer/>
       </body>
     </html>
